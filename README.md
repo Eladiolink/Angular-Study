@@ -22,7 +22,7 @@ ng new my-app --no-standalone
 
 ## Interpolação de dados
  
-- A interpolação de dados e um recurso que vai nos ensinar a trabalhar com componentes do Angular
+- A interpolação de dados é um recurso que irá nos ensinar a trabalhar com componentes do Angular
 - Cria-se variáveis no arquivo .ts, dentro da classe, logo essas variáveis sao propriedades da classe.
 - E então teremos acesso a estes dados no arquivo .html, o template
-- A impressão e feita através de {{dado}}
+- A impressão é feita através de {{dado}}
