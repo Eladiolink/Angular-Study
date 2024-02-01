@@ -26,3 +26,31 @@ ng new my-app --no-standalone
 - Cria-se variáveis no arquivo .ts, dentro da classe, logo essas variáveis sao propriedades da classe.
 - E então teremos acesso a estes dados no arquivo .html, o template
 - A impressão é feita através de {{dado}}
+
+## CSS no Angular
+
+São feitos de duas maneiras:
+
+- **Global:** Utilizando o arquivo styles.css, que fica em src;
+- **Scoped:**: Estilo a nível de componente,que é criado quando se usa o generate.
+
+## Compartilhando Dados
+
+- Na chamada do componente o nome do dado que será recebido com a seguinte sintaxe [dado]
+- E no código .ts do componente filho se utiliza o decorator @input que tem como papel entregar o dado para o template.
+
+## Diretivas
+
+- Diretivas pode ser usado em vários contextos no angular, ou seja podem realizar diversas funções no sistema, como aplicar estilos em um elemento por exemplo.
+
+- As diretivas no Angular sempre começam com ng, exemplo: ngTalCoisa.
+
+## Renderização Condicional
+
+- Utilizamos a diretiva ngif para exibir um conteúdo por meio de algum condicional.
+
+- Os valores podem ser dinâmicos (propriedades), mas podem ser feitas outros tipos de comparação.
+
+- Há a possibilidade de imprimir um cenário para validação de false, com o **else**
+
+# Eventos
