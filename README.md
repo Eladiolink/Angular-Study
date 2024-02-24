@@ -54,3 +54,66 @@ São feitos de duas maneiras:
 - Há a possibilidade de imprimir um cenário para validação de false, com o **else**
 
 # Eventos
+
+- Pode-se ativar eventos nos componentes para disparar algum método
+- Um evento clásssico que utilizamos muito é o click
+- A sintaxe é: (click)="algumFuncao()"
+- Os métodos ficam na **classe**
+- Esse recurso é muito utilizado para acessar API
+
+# Emitir Eventos
+
+- Pode-se comunicar eventos de um componente filho para o pai
+- Para isso vamos precisar do *@Output*, que vai fazer a saída do evento do componente filho
+- *Na tag de invocação do componente no template*, escolhemos um método para executar quando o evento for emitido.
+
+- Ex: *(emit)="onEmit()"*
+
+# Renderização de Listas
+
+- Importante usar loop para listas
+- Para isso é necessário usar a propriedade com os itens da lista
+- No template do componente utiliza-se o **ngFor*
+- Ex: **ngFor="let item of itens"*
+
+# Interfaces (By TypeScript)
+
+- Um entidade pode ser modelada como uma *interface*
+- Isso vai tornar nosso código mais simples ao longo do programa
+- Padroniza ele e facilita a manutenção
+
+# Pipe operators 
+
+- Os pipe operators sao recursos para trabalhar com strings nos templates.
+- Podemos realizar *diversas funções* como deixar o texto em CAIXA ALTA.
+
+- A sintaxe é: **{{dado | algumPipeOperator }}**
+
+# Two way data binding
+
+- O *TWO WAY DATA BINDING* é um recurso muito interessante para trabalho com formulários
+- Basicamente conseguimos **alterar props** e o template com o preenchimento de inputs
+- É necessário importar o **FormsModule** no componente principal
+- E também declarar o **ngModel** no input, além de preencher também o atributo name, todos com o mesmo valor
+
+# Services 
+
+- O **Service** é outra parte fundamental da arquitetura do Angular
+- Geralmente ficam as **requisições para API's** que utilizamos no projeto
+- Precisamos criar o service com: *ng generate service nome*
+- Importar no componente e iniciar no **construtor**
+- Depois é possível acessar os métodos dele
+
+# Angular Router 
+
+- Cria-se um novo arquivo para declarar as rotas da aplicação
+- Nele importa-se os módulos **RouterModule** e **Routes**
+- Após a definição estas rotas precisam ser importadas em **app.modules.ts**
+- E por fim no *template* principal cria-se as rotas
+- E substitui os componentes por **<router-outle>**
+
+# Requisições HTTP
+
+- Utiliza-se os services para fazer as requisições HTTP
+- Necessário importar os pacotes: HttpClient e HttpHeaders
+- É necessário inicializar o módulo HttpClientModule no app.module.ts

@@ -1,5 +1,7 @@
-<app-first-component></app-first-component>
-
-<app-parent-data [name]="usarName" [email] = "userData.email"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
+<nav>
+    <a routerLink="/">Home</a>  |
+    <a routerLink="/list">List</a> |
+    <a routerLink="/Emitter">Emitter</a>
+</nav>
+<router-outlet>
+</router-outlet>
